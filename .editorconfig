@@ -1,0 +1,14 @@
+# EditorConfig (http://EditorConfig.org)
+
+# top-most EditorConfig file
+root = true
+
+# General text file config
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+# Java config
+[*.java]
+indent_style = tab
