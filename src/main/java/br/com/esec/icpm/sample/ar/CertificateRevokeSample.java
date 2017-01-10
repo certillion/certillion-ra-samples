@@ -8,6 +8,7 @@ import javax.xml.ws.Service;
 
 import br.com.esec.icpm.mcc.ws.CertificateRevokedType;
 import br.com.esec.icpm.mcc.ws.RegistryAuthorityPortType;
+import br.com.esec.icpm.mcc.ws.RegistryAuthorityPortTypeV2;
 import br.com.esec.icpm.server.ws.ICPMException;
 import br.com.esec.icpm.server.ws.StatusRespType;
 
@@ -34,8 +35,8 @@ public class CertificateRevokeSample {
 		QName qName = new QName("http://esec.com.br/mcc/ra",
 				"RegistryAuthorityService");
 		Service registryAuthorityService = Service.create(url, qName);
-		RegistryAuthorityPortType registryAuthorityPort = registryAuthorityService
-				.getPort(RegistryAuthorityPortType.class);
+		RegistryAuthorityPortTypeV2 registryAuthorityPort = registryAuthorityService
+				.getPort(RegistryAuthorityPortTypeV2.class);
 
 		// Inform to MCS that the certificate was revoked
 		CertificateRevokedType certificateRevoked = new CertificateRevokedType();

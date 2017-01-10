@@ -6,7 +6,7 @@
 	<version>1.8.7</version>
 	
 	<properties>
-		<certillion.server.version>1.5.4</certillion.server.version>
+		<certillion.server.version>1.13.0-SNAPSHOT</certillion.server.version>
 	</properties>
 
 	<dependencies>

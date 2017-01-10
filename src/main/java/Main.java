@@ -24,6 +24,8 @@ public class Main {
 			CertificateIssuedSample.main(newArgs);
 		} else if (COMMAND_REVOKE.equals(args[0])) {
 			CertificateRevokeSample.main(newArgs);
+		}else{
+			System.out.println("Need this params: [command] [options...]");
 		}
 	}
 
